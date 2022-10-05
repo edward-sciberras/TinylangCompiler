@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProgramNode>
+	<FunctionDeclare Type='TOK_FloatKeyword'>
+		<Identifier>Sq</Identifier>
+		<FormalParams>
+			<FormalParam Type='TOK_FloatKeyword'>
+				<Identifier>x</Identifier>
+			</FormalParam>
+		</FormalParams>
+		<BlockStatement>
+			<ReturnStatement>
+				<Expression>
+					<BinaryExpression Op='*'>
+						<Identifier>x</Identifier>
+						<Identifier>x</Identifier>
+					</BinaryExpression>
+				</Expression>
+			</ReturnStatement>
+		</BlockStatement>
+	</FunctionDeclare>
+</ProgramNode>

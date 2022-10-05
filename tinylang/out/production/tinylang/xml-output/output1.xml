@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProgramNode>
+	<FunctionDeclare Type='TOK_FloatKeyword'>
+		<Identifier>Sq</Identifier>
+		<FormalParams>
+			<FormalParam Type='TOK_FloatKeyword'>
+				<Identifier>x</Identifier>
+			</FormalParam>
+		</FormalParams>
+		<BlockStatement>
+			<ReturnStatement>
+				<Expression>
+					<BinaryExpression Op='*'>
+						<Identifier>x</Identifier>
+						<Identifier>x</Identifier>
+					</BinaryExpression>
+				</Expression>
+			</ReturnStatement>
+		</BlockStatement>
+	</FunctionDeclare>
+	<FunctionDeclare Type='TOK_BooleanKeyword'>
+		<Identifier>XGreaterY</Identifier>
+		<FormalParams>
+			<FormalParam Type='TOK_FloatKeyword'>
+				<Identifier>x</Identifier>
+			</FormalParam>
+			<FormalParam Type='TOK_FloatKeyword'>
+				<Identifier>y</Identifier>
+			</FormalParam>
+		</FormalParams>
+		<BlockStatement>
+			<VariableDeclare>
+				<Variable Type='TOK_BooleanKeyword'>ans</Variable>
+				<Expression>
+					<BoolLiteral>true</BoolLiteral>
+				</Expression>
+			</VariableDeclare>
+			<IfStatement>
+				<Expression>
+					<BinaryExpression Op='>'>
+						<Identifier>y</Identifier>
+						<Identifier>x</Identifier>
+					</BinaryExpression>
+				</Expression>
+				<BlockStatement>
+					<Assignment>
+						<Identifier>ans</Identifier>
+						<Expression>
+							<Identifier>flase</Identifier>
+						</Expression>
+					</Assignment>
+				</BlockStatement>
+			</IfStatement>
+			<ReturnStatement>
+				<Expression>
+					<Identifier>ans</Identifier>
+				</Expression>
+			</ReturnStatement>
+		</BlockStatement>
+	</FunctionDeclare>
+	<FunctionDeclare Type='TOK_BooleanKeyword'>
+		<Identifier>XGreaterY_2</Identifier>
+		<FormalParams>
+			<FormalParam Type='TOK_FloatKeyword'>
+				<Identifier>x</Identifier>
+			</FormalParam>
+			<FormalParam Type='TOK_FloatKeyword'>
+				<Identifier>y</Identifier>
+			</FormalParam>
+		</FormalParams>
+		<BlockStatement>
+			<ReturnStatement>
+				<Expression>
+					<BinaryExpression Op='>'>
+						<Identifier>x</Identifier>
+						<Identifier>y</Identifier>
+					</BinaryExpression>
+				</Expression>
+			</ReturnStatement>
+		</BlockStatement>
+	</FunctionDeclare>
+</ProgramNode>

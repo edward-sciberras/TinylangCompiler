@@ -1,0 +1,14 @@
+fn Sq(x:float) -> float {
+	return x*x;
+}
+
+fn XGreaterY(x:float , y:float) -> bool {
+	let ans:bool = true;
+	if (y > x) { ans = false; }
+	return ans;
+}
+
+//Same functionality as function above but useing less code
+fn XGreaterY_2(x:float, y:float) -> bool {
+	return x > y;
+}
